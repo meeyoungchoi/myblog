@@ -21,4 +21,18 @@ public class HelloController {
         return "welcome";
     }
 
+    @GetMapping("/privacy")
+    public String privacy(){
+        return "articles/privacy";
+    }
+
+    @GetMapping("/articles")
+    public String index() {
+        return "articles/index";
+    }
+
+    @GetMapping("/terms")
+    public String terms() {
+        return "articles/terms";
+    }
 }
